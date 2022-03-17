@@ -1,0 +1,25 @@
+@use 'variables';
+
+.water-canvas { 
+    padding: 5rem 10rem;
+
+    &__title { 
+        font: variables.$font-title;
+        margin: 0;
+
+        &::before{
+            display: inline-block;
+            content: "";
+            background-color: variables.$purple-color;
+            width: 0.4rem;
+            height: 2rem;
+        }
+    }
+
+    &__canvas { 
+        border: 1rem;
+        border-color: variables.$blue-color;
+        height: 80rem;
+        width: 80rem;
+    }
+}
